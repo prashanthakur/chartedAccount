@@ -1,0 +1,54 @@
+.services-main{
+display: flex;
+justify-content: space-around;
+margin: 0px 0px;
+padding: 20px;
+}
+.services-main img{
+height: 70px;
+width: 70px;
+}
+.services-card{
+    height: 150px;
+    /* background-color: rgb(43, 226, 153); */
+    /* border: 1px solid gray; */
+    width: 300px;
+    margin: 25px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.services-card:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+.services-main .services-card .allservices-texts{
+    font-size: 20px;
+    text-align: center;
+}
+.other-services{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px;
+    padding: 20px;
+}
+.other-service-cards{
+    height: 250px;
+    /* background-color: rgb(43, 226, 153); */
+    /* border: 1px solid rgb(100, 98, 98); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    /* width: 300px; */
+    margin: 25px 25px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.other-service-cards:hover{
+    background-color: blueviolet;
+}
+.other-service-cards img{
+    height: 150px;
+    width: 150px;
+}
+.texts-others-services{
+    font-size: 24px;
+}

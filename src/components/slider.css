@@ -1,0 +1,25 @@
+.slides-div{
+    /* border: 2px solid green; */
+}
+.slides-div img{
+   height: 100px;
+   width: 250px;
+   margin: 20px;
+}
+.slider{
+    /* border:2px solid red; */
+    height:100px;
+    width: 1000px;
+    margin: 50px auto;
+}
+
+@media screen and (max-width:800px){
+    .slides-div img{
+        width: 80%;
+        padding: 30px;
+
+    }
+    .slider{
+        width: 80vw;
+    }
+}
