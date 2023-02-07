@@ -1,0 +1,14 @@
+.coming-soon{
+  
+    height: 200px;
+    display: flex;
+    margin: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.coming-soon p{
+    font-size: 40px;
+  background: -webkit-linear-gradient(rgb(26, 37, 198), rgb(217, 234, 66));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

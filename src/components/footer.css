@@ -15,8 +15,8 @@
     border: 1px solid #A149FA;
 }
 .footer .contact-btn:hover{
-    background-color: rgb(219, 31, 31);
     transition: 0.3s ease-in-out;
+    transform: scale(1.1);
     border-radius: 5px;
     padding: 10px 30px;
     border: 1px solid #A149FA;
@@ -34,6 +34,10 @@
     .footer{
         height: max-content;
         margin-top: 125px;
-        padding: 50px 40px;
+        padding: 50px 20px;
+    }
+    .footer .connect{
+        font-size: 24px;
+        margin-top: 20px;
     }
 }

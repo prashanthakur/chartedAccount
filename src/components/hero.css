@@ -56,7 +56,7 @@
     /* border: 1px solid red; */
     background-color: #F7EC09;
     padding: 50px 100px;
-    margin-top: -10px;
+    margin-top: -50px;
    
 }
 .main-card .card-single{
@@ -129,6 +129,9 @@
 @media screen and (max-width:800px){
     .main-hero{
         height: 300px;
+        background-image: url(../images/businesspeople-working-finance-accounting-analyze-financi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .main-hero .svg{
         display: none;
@@ -139,7 +142,15 @@
     .main-hero .right-content .main-line{
         font-size: 30px;
         font-weight: bold;
-        color: #3B44F6;
+        color: #000;
+        background-color: #fff;
+        opacity: 0.6;
+    }
+    .main-hero .right-content .secondary-line{
+        margin-top: 80px;
+        color: #0d0d0c;
+        background-color: #fff;
+        opacity: 0.6;
     }
     .main-card .card-single{
         margin: 20px auto;

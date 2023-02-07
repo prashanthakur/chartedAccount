@@ -28,7 +28,7 @@ const Hero = () => {
           // transition={transition}
             >
               <Parallax speed={4}>
-              <img src={Tax} />
+              <img src={Tax} alt="tax"/>
               </Parallax>
             </motion.div>
       

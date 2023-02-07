@@ -55,6 +55,10 @@
 .try{
     background-color: rgb(221, 30, 30);
 }
+.announcement{
+    height: 25px;
+    background-color: #F7EC09;
+}
 
 /* .nav-links-mobile{
     background-color: rgb(119, 217, 45);

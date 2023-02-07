@@ -36,19 +36,35 @@ width: 70px;
     height: 250px;
     /* background-color: rgb(43, 226, 153); */
     /* border: 1px solid rgb(100, 98, 98); */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     /* width: 300px; */
     margin: 25px 25px;
     cursor: pointer;
     transition: all 1s ease;
+    width: 80%;
 }
 .other-service-cards:hover{
+    color: #fff;
     background-color: blueviolet;
 }
 .other-service-cards img{
     height: 150px;
-    width: 150px;
+    width: 160px;
 }
 .texts-others-services{
     font-size: 24px;
+}
+/* .star-health-logo{
+    width: 200px;
+} */
+
+
+@media screen and (max-width:800px){
+    .other-service-cards{
+        padding: 20px;
+        text-align: center;
+    }
+    .texts-others-services{
+        display: block;
+    }
 }

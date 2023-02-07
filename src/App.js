@@ -1,12 +1,17 @@
+import { useEffect } from "react";
 import Hero from "./components/Hero";
 import HeaderTwo from "./components/HeaderTwo";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
-import ComingSoon from 'react-coming-soon'
+// import ComingSoon from 'react-coming-soon'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Services from "./components/Services";
 import Form from "./components/Form";
+import ComingSoon from "./components/ComingSoon";
+import ContactUs from "./components/ContactUs";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const HomeApp = () => {
@@ -15,23 +20,27 @@ const HomeApp = () => {
       <Hero/>
       <Card/>
       <Slider/>
-      <Form/>
-      <Footer/> 
+      {/* <Form/> */}
+      <ContactUs/>
     </>
   )
 }
 
 
 function App() {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
       <Router>
          <HeaderTwo/>
         <Routes>
           <Route path="/" element={<HomeApp/>}/>
-          {/* <Route path="/about" element={<Footer/>}/> */}
+          <Route path="/contact" element={<ContactUs/>}/>
           <Route path="/services" element={<Services/>}/>
-          <Route path="*" element={<ComingSoon title="Coming Soon" bgColor="#fff" textColor="#9900ef" illustration="web-development"/>}/>
+          <Route path="*" element={<ComingSoon/>}/>
         </Routes>
+        <Footer/> 
       </Router>
   );
 }
