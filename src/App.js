@@ -7,7 +7,7 @@ import Slider from "./components/Slider";
 // import ComingSoon from 'react-coming-soon'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Services from "./components/Services";
-import Form from "./components/Form";
+// import Form from "./components/Form";
 import ComingSoon from "./components/ComingSoon";
 import ContactUs from "./components/ContactUs";
 import AOS from 'aos';
