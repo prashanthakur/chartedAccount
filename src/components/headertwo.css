@@ -9,7 +9,8 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     height: 100px;
-    background-color: #A149FA;
+    /* background-color: #A149FA; */
+    background-color: #7986cb;;
     padding: 0px 60px;
 }
 .main-nav div{

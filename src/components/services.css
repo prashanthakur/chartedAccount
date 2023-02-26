@@ -41,7 +41,7 @@ width: 70px;
     margin: 25px 25px;
     cursor: pointer;
     transition: all 1s ease;
-    width: 80%;
+    /* width: 80%; */
 }
 .other-service-cards:hover{
     color: #fff;

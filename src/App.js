@@ -13,6 +13,8 @@ import ComingSoon from "./components/ComingSoon";
 import Form from "./components/Form";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Mails from "./components/Mails";
+import { Authadmin } from "./components/Mails";
 
 
 const HomeApp = () => {
@@ -39,6 +41,8 @@ function App() {
         <Route path="/" element={<HomeApp />} />
         <Route path="/contact" element={<Form />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/mails-0xd0b404ed80db938a187f771b64a9098c984d4bec8767a967ee5a029b2f8f7d45" element={<Mails />} />
+        <Route path="/mails-auth" element={<Authadmin />} />
         <Route path="*" element={<ComingSoon />} />
       </Routes>
       <Footer />

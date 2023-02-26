@@ -1,6 +1,7 @@
 .main-hero{
     height: 700px;
     /* background:#A149FA; */
+    background-color: #7986cb;;
     display: flex;
     justify-content: space-around;
 
@@ -23,7 +24,8 @@
 .main-hero .right-content .main-line{
     font-size: 60px;
     font-weight: bold;
-    color: #3B44F6;
+    /* color: #3B44F6; */
+    color: #fff;
 }
 .main-hero .right-content .secondary-line{
     font-size: 20px;

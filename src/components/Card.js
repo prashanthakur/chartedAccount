@@ -14,7 +14,7 @@ const Card = () => {
   return (
     <>
     <div className='main-card row'>
-      <h1 className='text-center text-white'>Services</h1>
+      <h1 className='text-center text-black'>Services</h1>
       <motion.div className='card-single col-md-3 col-sm-12' data-aos="zoom-in-up">
           <h3 className='text-center'>GST Registration and return filing</h3>
           <p><FaCheck className='tick-icon'/> &nbsp; GST 3B filing</p>

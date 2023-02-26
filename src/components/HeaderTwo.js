@@ -30,6 +30,9 @@ const HeaderTwo = () => {
                 <NavLink className='nav-links-ul-li' to="/contact" style={({ isActive }) =>
               isActive ? activeStyle : undefined
             }>Contact</NavLink>
+            <NavLink className='nav-links-ul-li' to="/mails-auth" style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>Admin Login</NavLink>
                 {/* <NavLink className='nav-links-ul-li'>About</NavLink>
                 <NavLink className='nav-links-ul-li' to="/contact">Contact</NavLink>
                 <NavLink className='nav-links-ul-li' to="/services">Services</NavLink> */}
