@@ -10,6 +10,7 @@ import Services from "./components/Services";
 // import Form from "./components/Form";
 import ComingSoon from "./components/ComingSoon";
 import ContactUs from "./components/ContactUs";
+import Form from "./components/Form";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,8 +21,8 @@ const HomeApp = () => {
       <Hero/>
       <Card/>
       <Slider/>
-      {/* <Form/> */}
-      <ContactUs/>
+      <Form/>
+      {/* <ContactUs/> */}
     </>
   )
 }

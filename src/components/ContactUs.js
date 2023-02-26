@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import './contactus.css'
 
 class ContactUs extends React.Component {
@@ -75,6 +76,18 @@ class ContactUs extends React.Component {
       } else {
         this.setState({ formValid: false });
       }
+
+      axios.post('https://mentorconnects.onrender.com/mentors', {
+      name: name,
+      email: email,
+      message:message
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 
       e.preventDefault(); 
     }

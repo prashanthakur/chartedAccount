@@ -54,7 +54,8 @@
 .main-card{
     height: max-content;
     /* border: 1px solid red; */
-    background-color: #F7EC09;
+    /* background-color: #F7EC09; */
+    background-color: #d8d4d8;
     padding: 50px 100px;
     margin-top: -50px;
    
