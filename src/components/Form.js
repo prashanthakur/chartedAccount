@@ -8,20 +8,26 @@ const Form = () => {
   const [ud,setud] = useState({
     name:'',
     email:'',
-    message:''
+    message:'',
+    sendcomplete:false
   })
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(ud)
-    axios.post('https://mentorconnects.onrender.com/send-mail', {
+    if(ud.sendcomplete===false){
+      Swal.fire('sending...')
+    }
+    if(ud.name !== '' && ud.email !== '' && ud.message !== ''){
+      axios.post('https://mentorconnects.onrender.com/send-mail', {
       name: ud.name,
       email: ud.email,
       message:ud.message
     })
     .then(function (response) {
       if(response){
+        setud({...ud,sendcomplete:true})
         Swal.fire({
           title: 'Email sent successfully !',
+          html:'<p style="color:green">we will connect you in 24 hours</p>',
           icon: 'success',
         })
       }
@@ -34,6 +40,13 @@ const Form = () => {
       })
       console.log(error);
     });
+    }else{
+      Swal.fire({
+        title: 'All fields are mandatory !',
+        icon: 'error',
+      })
+    }
+    
     
   }
 
