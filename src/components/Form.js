@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 import './form.css'
 
 const Form = () => {
@@ -18,9 +19,19 @@ const Form = () => {
       message:ud.message
     })
     .then(function (response) {
+      if(response){
+        Swal.fire({
+          title: 'Email sent successfully !',
+          icon: 'success',
+        })
+      }
       console.log(response);
     })
     .catch(function (error) {
+      Swal.fire({
+        title: 'Error!',
+        icon: 'error',
+      })
       console.log(error);
     });
     
@@ -34,7 +45,7 @@ const Form = () => {
 
   return (
     <>
-      <div class="container">
+      <div class="container mb-5 mt-2">
         <form onSubmit={(e) => handleSubmit(e)}>
 
           <label for="fname">Name</label>
