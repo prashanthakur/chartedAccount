@@ -1,5 +1,7 @@
 import axios from 'axios'
 import React ,{useEffect,useState}from 'react'
+import { Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 const Mails = () => {
     const [data,setdata] = useState([])
@@ -14,7 +16,7 @@ const Mails = () => {
     {
         data.map((item)=>{
             return (
-                <div>
+                <div style={{color: "#23984c",FontWeight: "bold",padding: "30px 60px"}}>
                     <h2>{item.name} sends "{item.message}" from {item.email}</h2><hr/>
                     {/* <h2>{item.name}</h2>
                     <h3>{item.email}</h3>
@@ -23,6 +25,7 @@ const Mails = () => {
             )
         })
     }
+
     
     </>
   )
@@ -30,15 +33,22 @@ const Mails = () => {
 
 
 export const Authadmin = () => {
+    const [pass,setpass] = useState('')
     const handleChange=(e)=>{
-        if(e.target.value==="happy123"){
-            window.location.href="/mails-0xd0b404ed80db938a187f771b64a9098c984d4bec8767a967ee5a029b2f8f7d45"
+        setpass(e.target.value)
+    }
+    const Apass=()=>{
+        if(pass!=='happy'){
+            Swal.fire("You are not an Admin !")
         }
     }
   return (
-    <div className='container'>
+    <>
+    <div className='container' style={{height:200}}>
         <input type="password" onChange={(e)=>handleChange(e)} placeholder="Enter Password here"/>
+        <Link to={pass==='happy' ? '/mails-0xd0b404ed80db938a187f771b64a9098c984d4bec8767a967ee5a029b2f8f7d45': '/mails-auth'} className="btn btn-success" onClick={Apass}>Login</Link>
     </div>
+    </>
   )
 }
 

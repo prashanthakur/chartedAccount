@@ -58,7 +58,7 @@ const Form = () => {
 
   return (
     <>
-      <div class="container mb-5 mt-2">
+      <div class="container mt-2">
         <form onSubmit={(e) => handleSubmit(e)}>
 
           <label for="fname">Name</label>
@@ -68,7 +68,7 @@ const Form = () => {
           <input type="text" id="lname" name="email" placeholder="Your email." onChange={(e)=>handleChange(e)}/>
 
 
-          <label for="subject">Subject</label>
+          <label for="subject">Message</label>
           <textarea id="subject" name="message" placeholder="Write something.." onChange={(e)=>handleChange(e)}></textarea>
 
           <input type="submit" value="Submit" />

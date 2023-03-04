@@ -1,11 +1,11 @@
 import React from 'react'
 import './services.css'
-import icon from '../images/tax3.png'
+import icon from '../images/money-bag.png'
 // import icon2 from '../images/tax2.jpg'
-import icon3 from '../images/rent.png'
-import icon4 from '../images/license.jpg'
-import icon5 from '../images/income-tax.jpg'
-import icon6 from '../images/star-health.png'
+import icon3 from '../images/lease.png'
+import icon4 from '../images/license.png'
+import icon5 from '../images/tax.png'
+import icon6 from '../images/medical.png'
 // import ScrollAnimation from 'react-animate-on-scroll';
 
 

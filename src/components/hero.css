@@ -1,7 +1,7 @@
 .main-hero{
     height: 700px;
     /* background:#A149FA; */
-    background-color: #7986cb;;
+    background-color: #7986cb;
     display: flex;
     justify-content: space-around;
 
@@ -131,8 +131,9 @@
 
 @media screen and (max-width:800px){
     .main-hero{
-        height: 300px;
-        background-image: url(../images/businesspeople-working-finance-accounting-analyze-financi.jpg);
+        /* display: none; */
+        height: 360px;
+        /* background-image: url(../images/businesspeople-working-finance-accounting-analyze-financi.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -34,7 +34,7 @@
 @media screen and (max-width:800px){
     .footer{
         height: max-content;
-        margin-top: 125px;
+        /* margin-top: 125px; */
         padding: 50px 20px;
     }
     .footer .connect{

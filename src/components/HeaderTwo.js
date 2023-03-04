@@ -2,12 +2,13 @@ import React , {useState} from 'react'
 import './headertwo.css'
 import { FaAlignJustify, FaTimes} from "react-icons/fa";
 import { NavLink} from 'react-router-dom';
+import { FaBeer } from 'react-icons/fa';
+import { AiOutlineHome ,AiOutlinePhone,AiOutlineSmile,AiOutlineLaptop,AiOutlineUser} from "react-icons/ai";
 
 const HeaderTwo = () => {
     const [menu, setMenu] = useState(false);
     let activeStyle = {
         color:"#F7EC09",
-
       };
   return (
     <>
@@ -20,19 +21,19 @@ const HeaderTwo = () => {
             <ul className='nav-links-ul'>
                 <NavLink className='nav-links-ul-li' to="/" style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            }>Home</NavLink>
+            }><AiOutlineHome style={{color:"#fff",margin:5,fontSize:"20px",marginTop:-2}}/>Home</NavLink>
                 <NavLink className='nav-links-ul-li' to="/about" style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            }>About</NavLink>
+            }><AiOutlineSmile style={{color:"#fff",margin:5,fontSize:"20px",marginTop:-2}}/>About</NavLink>
                 <NavLink className='nav-links-ul-li' to="/services" style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            }>Services</NavLink>
+            }><AiOutlineLaptop style={{color:"#fff",margin:5,fontSize:"20px",marginTop:-2}}/>Services</NavLink>
                 <NavLink className='nav-links-ul-li' to="/contact" style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            }>Contact</NavLink>
+            }><AiOutlinePhone style={{color:"#fff",margin:5,fontSize:"20px",marginTop:-2}}/>Contact</NavLink>
             <NavLink className='nav-links-ul-li' to="/mails-auth" style={({ isActive }) =>
               isActive ? activeStyle : undefined
-            }>Admin Login</NavLink>
+            }><AiOutlineUser style={{color:"#fff",margin:5,fontSize:"20px",marginTop:-2}}/>Admin Login</NavLink>
                 {/* <NavLink className='nav-links-ul-li'>About</NavLink>
                 <NavLink className='nav-links-ul-li' to="/contact">Contact</NavLink>
                 <NavLink className='nav-links-ul-li' to="/services">Services</NavLink> */}
