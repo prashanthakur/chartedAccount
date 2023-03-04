@@ -2,7 +2,7 @@ import React , {useState} from 'react'
 import './headertwo.css'
 import { FaAlignJustify, FaTimes} from "react-icons/fa";
 import { NavLink} from 'react-router-dom';
-import { FaBeer } from 'react-icons/fa';
+// import { FaBeer } from 'react-icons/fa';
 import { AiOutlineHome ,AiOutlinePhone,AiOutlineSmile,AiOutlineLaptop,AiOutlineUser} from "react-icons/ai";
 
 const HeaderTwo = () => {
